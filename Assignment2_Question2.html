@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 - Assignment 2: Question 2</title>
+    <link rel="stylesheet" href="Assignment2_Question2.css">
+</head>
+<body>
+
+    <main>
+        <h1>Payment Details</h1>
+        <hr>
+
+        <form id="paymentForm" novalidate>
+            <fieldset>
+                <legend>Billing Information</legend>
+                
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">ADDRESS</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">CITY</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="state">STATE/PROVINCE</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">POSTAL CODE</label>
+                    <input type="text" id="zip" name="zip" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">COUNTRY</label>
+                    <select id="country" name="country" required>
+                        <option value="">Choose your country</option>
+                        <option value="JM">Jamaica</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="MX">Mexico</option>
+                        <option value="EN">England</option>
+                        <option value="FR">France</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>PAYMENT METHOD</label>
+                    <div class="radio-group">
+                        <input type="radio" name="payment" value="paypal" id="payPal" checked> 
+                        <label for="payPal">PayPal</label>
+                        
+                        <input type="radio" name="payment" value="visa" id="visa"> 
+                        <label for="visa">Visa</label>
+                        
+                        <input type="radio" name="payment" value="mastercard" id="masterCard"> 
+                        <label for="masterCard">MasterCard</label>
+                    </div>
+                </div>
+
+                <div id="ccFields">
+                    <div class="form-group">
+                        <label for="cardNumber">CARD NUMBER</label>
+                        <input type="text" id="cardNumber" name="cardNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry">EXPIRATION DATE</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="4">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="form-group">
+                    <input type="checkbox" id="sameAsBilling" checked> 
+                    <label for="sameAsBilling">Same as billing</label>
+                </div>
+
+                <div id="shippingFields" style="display: none;">
+                    <legend>Shipping Information</legend>
+                    <div class="form-group">
+                        <label for="shipAddress">SHIPPING ADDRESS</label>
+                        <input type="text" id="shipAddress">
+                    </div>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submitBtn">Submit Payment</button>
+        </form>
+    </main>
+
+    <script src="Assignment2_Question2.js"></script>
+
+</body>
+</html>

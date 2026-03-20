@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: left;
+}
+
+h1 { 
+    margin-top: 0; 
+    color: #333; 
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#demo ul {
+    list-style: none;
+    padding: 0;
+}
+
+#demo li {
+    background: #fafafa;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+
+
+#highEarners {
+    list-style: none;
+    padding: 0;
+}
+
+#highEarners li {
+    padding: 6px;
+    border-bottom: 1px solid #eee;
+}
+
+pre {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+}
+
+#searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

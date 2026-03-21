@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #1b0484;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    background: #b76f6f;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dataTables_wrapper {
+    margin-top: 20px;
+}
+
+.dataTables_filter input {
+    padding: 5px;
+}
+
+.dataTables_length select {
+    padding: 5px;
+}
